@@ -1,0 +1,141 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*Reset para REMS - 62.5%=10px de 16px*/
+}
+
+/*para aplicar a todos los elementos se puede utilizar google font*/
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+
+/*Estilos globales*/
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem; /*1200 px*/
+    margin: 0 auto;  /*0 porque no alineamos a los lados auto es a los lados*/
+}
+
+h1{
+font-size: 2.8rem;
+}
+h2{
+font-size: 2.4rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+/*Utilidades*/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+    
+}
+.centrar-texto{
+    text-align: center;
+}
+.d-block{
+    display: block!important;
+}
+
+/*Botones*/
+
+
+/*Header */
+
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+
+}
+
+
+
+.site-header.inicio{
+    background: url(../img/header.jpg);
+    height: 100vh;
+    min-height: 60rem; /*600 px*/
+}
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-header h1{
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 3.8rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/** Navegacion**/
+
+
+/*Iconos Nsosotros*/
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.icono {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+
+}
+
+
+/*Contacto Home - Pagina Principal*/
+
+
+
+
+/*footer*/
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.contenderor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    margin: 0;
+    color: #ffffff;
+}
+
+/*INTERNAS*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 3rem;
+
+}
