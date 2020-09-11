@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato:300, 400,700,900">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -27,7 +28,7 @@
                     <a href="ingresar.html">Servicios</a>
                 </nav>
             </div> <!-- Div que cierra barra-->
-                <h1>Alquiler de Casas y Departamentos</h1>
+                <h1>Alquiler de Casas, Departamentos y Habitaciones</h1>
         </div> <!-- Div que cierra contenedor-->
     </header>
 
@@ -35,43 +36,62 @@
 <section class="contenedor seccion">
     <h2 class="fw-300 centrar-texto">Mas sobre Nosotros</h2>
 
-    <img src="img/precio.png" alt="Icono Precio">
-    <h3>El Mejor Precio</h3>
-    <p>En nuestra inmobiliaria, lo primero es el cliente. Por ello te ofrecemos los mejores precios dentro de este mercado...</p>
+    <div class="icono-nosotros">
 
-    <img src="img/tiempo.png" alt="Icono soluciones a Tiempo">
-    <h3>Soluciones a Tiempo</h3>
-    <p>Veniam, dignissimos! Aspernatur magnam eligendi, quam nostrum quia adipisci veniam tempora ipsam recusandae ipsum unde. Doloremque ad exercitationem quo architecto? Laudantium, dignissimos.</p>
+        <div class="icono">
+            <img src="img/precio.png" alt="Icono Precio">
+            <h3>El Mejor Precio</h3>
+            <p>En nuestra inmobiliaria, lo primero es el cliente. Por ello te ofrecemos los mejores precios dentro de este mercado...</p>
+        </div>
 
-    <img src="img/Confianza.png" alt="Icono Confianza y Seguridad">
-    <h3>Confianza y Seguridad</h3>
-    <p>Ullam distinctio velit vitae facilis assumenda? Perferendis ipsum possimus eligendi accusantium dignissimos laboriosam soluta quisquam, totam non, nobis labore laborum inventore nesciunt.</p>
+        <div class="icono">
+            <img src="img/tiempo.png" alt="Icono soluciones a Tiempo">
+            <h3>Soluciones a Tiempo</h3>
+            <p>Veniam, dignissimos! Aspernatur magnam eligendi, quam nostrum quia adipisci veniam tempora ipsam recusandae ipsum unde. Doloremque ad exercitationem quo architecto? Laudantium, dignissimos.</p>
+        </div>
+
+        <div class="icono">
+            <img src="img/Confianza.png" alt="Icono Confianza y Seguridad">
+            <h3>Confianza y Seguridad</h3>
+            <p>Ullam distinctio velit vitae facilis assumenda? Perferendis ipsum possimus eligendi accusantium dignissimos laboriosam soluta quisquam, totam non, nobis labore laborum inventore nesciunt.</p>
+        </div>
+        
+    </div>
 </section>
 
 <main class="contenedor seccion">
     <h2 class="fw-300 centrar-texto">Propiedades Disponibles</h2>
-    <div>
-        <img src="img/casa2.jpg" alt="Imagen Casa">
-        <h3>Casas en Zona Residencial</h3>
-        <p>Casa en zona residencial, 3 habitaciones etc, etc </p>
-        <p>$15.000</p>
-        <a href="">Ver Propiedad</a>
-    </div>
+   
+    <div class="contenedor-anuncio">
+        <div class="anuncio-casa">
+            <img src="img/casa2.jpg" alt="Imagen Casa">
+            <div class="contenido-anuncio">
+                <h3>Casas en Zona Residencial</h3>
+                <p>Casa en zona residencial, 3 habitaciones etc, etc </p>
+                <p>$15.000</p>
+                <a href="">Ver Propiedad</a>
+            </div>
+        </div>
 
-    <div>
-        <img src="img/casa3.jpg" alt="Imagen Departamento">
-        <h3>Departamentos de Lujo</h3>
-        <p>Departamento de una habitacion, patio y cochera etc, etc </p>
-        <p>$10.000</p>
-        <a href="">Ver Propiedad</a>
-    </div>
+        <div class="anuncio-casa">
+            <img src="img/casa3.jpg" alt="Imagen Departamento">
+            <div class="contenido-anuncio">
+                <h3>Departamentos de Lujo</h3>
+                <p>Departamento de una habitacion, patio y cochera etc, etc </p>
+                <p>$10.000</p>
+                <a href="">Ver Propiedad</a>
+            </div>
+        </div>
 
-    <div>
-        <img src="img/casa4.jpg" alt="Imagen Casa zona1">
-        <h3>Casa Zona Escolar</h3>
-        <p></p>Casa en zona escolar, 3 habitaciones etc, etc </p>
-        <p>$12.000</p>
-        <a href="">Ver Propiedad</a>
+        <div class="anuncio-casa">
+            <img src="img/casa4.jpg" alt="Imagen Casa zona1">
+                <div class="contenido-anuncio">
+                <h3>Casa Zona Escolar</h3>
+                <p></p>Casa en zona escolar, 3 habitaciones etc, etc </p>
+                <p>$12.000</p>
+                <a href="">Ver Propiedad</a>
+            </div>
+        </div>
     </div>
 
     <a href="propiedades.html">Ver Todas</a>

@@ -5,7 +5,7 @@ html{
 
 /*para aplicar a todos los elementos se puede utilizar google font*/
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.6rem;
     line-height: 3rem;
 }
@@ -65,8 +65,9 @@ h4{
 
 
 .site-header.inicio{
-    background: url(../img/header.jpg);
-    height: 100vh;
+    background-image: url(../img/casa5-header.jpg);
+    height: 100vh; /*se pone vh toma toda la altura, y mide 600px, ymaximo toda lapantalla*/
+    background-size: auto;
     min-height: 60rem; /*600 px*/
 }
 .contenido-header{
@@ -76,11 +77,12 @@ h4{
     justify-content: space-between;
 }
 .contenido-header h1{
-    color: #ffffff;
+    color: rgb(22, 22, 73);
     text-decoration: none;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; 
     max-width: 60rem;
-    line-height: 3.8rem;
+    line-height: 3rem;
+    
 }
 
 .barra{
@@ -91,17 +93,46 @@ h4{
 }
 
 /** Navegacion**/
+.navegacion a{
+    color: rgba(25, 25, 88);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+.navegacion a:hover{
+    color:white;
+}
 
+.navegacion a:last-of-type{
+    margin: 0;
+}
 
-/*Iconos Nsosotros*/
-.iconos-nosotros{
+/*Iconos Nosotros*/
+.icono-nosotros{
     display: flex;
     justify-content: space-between;
- 
+
 }
-.icono {
+.icono{
     flex-basis: calc(33.3% - 1rem);
-    text-align: center;
+    text-align:center;
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+/*Anuncio de ventas*/
+.contenedor-anuncio{
+    display: flex;
+}
+
+.anuncio-casa{
+    flex-basis: calc(33.3% -1rem);
+    border: 1px solid wheat;
+    background-color: rgb(252, 242, 225);
+}
+.contenido-anuncio{
+    padding: 2rem;
 
 }
 
