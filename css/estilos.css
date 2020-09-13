@@ -2,6 +2,9 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; /*Reset para REMS - 62.5%=10px de 16px*/
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 /*para aplicar a todos los elementos se puede utilizar google font*/
 body{
@@ -52,22 +55,49 @@ h4{
 }
 
 /*Botones*/
+.boton{
+    color:  #fff;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
 
+    background-size: 200%;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display:inline-block;
+    text-align: center;
+    background-position: right;
+}
+
+
+.boton-naranja{
+    background-image: linear-gradient(to left, #FF9F67, #ec8b53, #FF9F67);
+
+}
+.boton-azul{
+    background-color: #072366;
+}
+.ver-propiedades{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /*Header */
 
 .site-header{
-    background-color: #333333;
-    padding: 1rem 0 3rem 0;
+    background-color: #FCEBE2;
+    padding: 1rem 0 2rem 0;
 
 }
 
 
-
 .site-header.inicio{
-    background-image: url(../img/casa5-header.jpg);
+    background-image: url(../img/header.jpg);
+    background-position: center center;
     height: 100vh; /*se pone vh toma toda la altura, y mide 600px, ymaximo toda lapantalla*/
-    background-size: auto;
+    background-size: cover;
     min-height: 60rem; /*600 px*/
 }
 .contenido-header{
@@ -77,7 +107,7 @@ h4{
     justify-content: space-between;
 }
 .contenido-header h1{
-    color: rgb(22, 22, 73);
+    color:#072366;
     text-decoration: none;
     padding-bottom: 2rem; 
     max-width: 60rem;
@@ -94,7 +124,7 @@ h4{
 
 /** Navegacion**/
 .navegacion a{
-    color: rgba(25, 25, 88);
+    color: #072366;
     text-decoration: none;
     font-size: 1.8rem;
     margin-right: 15px;
@@ -133,18 +163,41 @@ h4{
 }
 .contenido-anuncio{
     padding: 2rem;
-
+}
+.contenido-anuncio h3 .contenido-anuncio p{
+    margin: 0;
+}
+.precio{
+    color: rgb(241, 168, 100) ;
+    font-weight: 700;
 }
 
 
 /*Contacto Home - Pagina Principal*/
 
 
-
+.imagen-inferior{
+    background-image: url(../img/imagen-inferior.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+   
+}
+.contenido-contacto{
+    flex: 1;
+    color: white;
+   
+}
+.contenido-contacto p{
+    font-size: 1.8rem;
+    
+}
 
 /*footer*/
 .site-footer{
-    background-color: #333333;
+    background-color: #FCEBE2;
     margin: 0;
 }
 .contenderor-footer{
@@ -154,13 +207,13 @@ h4{
 }
 .copyright{
     margin: 0;
-    color: #ffffff;
+    color: #072366;
 }
 
 /*INTERNAS*/
 .contenido-nosotros{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid; /*utiliza columas*/
+    grid-template-columns: repeat(2, 1fr); /*fr es una fraccion - Defines la cantidad de columnas*/
     grid-column-gap: 2rem;
 }
 .texto-nosotros blockquote{
