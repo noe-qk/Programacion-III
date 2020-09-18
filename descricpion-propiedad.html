@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src= "JS/main.js"></script>
+</head>
+<body>
+    
+    <header class = "site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                    <!--si oprimo en la imagen, me lleva a la pagina ppal-->
+                    <a href="/">
+                    <img src="img/Logo Inmobiliaria.png" alt="Logo de Inmobiliaria">
+                    </a>
+
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="propiedades.html">Propiedades</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="ingresar.html">Servicios</a>
+                </nav>
+        
+            </div> <!-- Div que cierra barra-->
+        </div> <!-- Div que cierra contenedor-->
+    </header>
+
+<h1 class="fw-300 centrar-texto"> Casa Country</h1>
+
+<!-- Slideshow container -->
+<div class="slideshow-container contenedor seccion">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="img/Galeria-Country/img1.jpg" style="width:100%">
+      <div class="text">Frente de la propiedad</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="img/Galeria-Country/img2.jpg" style="width:100%">
+      <div class="text">Estudio amplio</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="img/Galeria-Country/img3.jpg" style="width:100%">
+      <div class="text">Sala de estar</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/Galeria-Country/img4.jpg" style="width:100%">
+        <div class="text">Espacio de Estudio</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/Galeria-Country/img5.jpg" style="width:100%">
+        <div class="text">Habitaciones amplias</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/Galeria-Country/img6.jpg" style="width:100%">
+        <div class="text">Frente Nocturno</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+
+  <main class="fw-300 seccion contenido-centrado centrar-texto contenedor">
+      <div class= "descripcion-propiedad">
+          <p class="precio">$10.000</p>
+          <ul class="iconos-caracteristicas">
+              <li>
+                  <img src="img/iconos/icono-cama.svg" alt="icono habitacion">
+                  <p>4</p>
+              </li>
+              <li>
+                  <img src="img/iconos/icono-picina.svg" alt="icono picina">
+                  <p>1</p>
+              </li>
+              <li>
+                  <img src="img/iconos/icono-patio.svg" alt="icono patio">
+                  <p>2</p>
+                </li>
+
+          </ul>
+
+      </div> <!--Descripion-->
+      <p>La Casa Country Luján Full Equipada se encuentra en Catamarca ofrece jardín, pileta al aire libre y vistas al jardín, 4 habitaciones, una principal amplia y 3 secundarias, sala de estar, cocina equipada, zona de lavadero, amplio patio en el fondo, zona de parrilla con un amplio ambiente con aire acondicionada para reuniones.
+        La propiedad se encuentra ubicada a 37 km de la ciudad capital.</p>
+  </main>
+
+
+
+<!--Seccion del footer, navegacion igual que en el inicio-->
+    <footer class="site-footer seccion">
+        <div class=" contenedor contenderor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="propiedades.html">Propiedades</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="ingresar.html">Servicios</a>
+            </nav>
+
+            <p class="copyright"> Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
