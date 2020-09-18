@@ -71,7 +71,9 @@ h4{
     background-position: right;
 }
 
-
+.boton:hover{
+    cursor: pointer;
+}
 .boton-naranja{
     background-image: linear-gradient(to left, #FF9F67, #ec8b53, #FF9F67);
 
@@ -222,4 +224,52 @@ h4{
     margin: 0;
     padding: 0 0 3rem;
 
+}
+
+/*Contacto*/
+.contacto p{
+    font-size: 1.5rem;
+    color:  #9c928d;
+    margin: 2rem;
+}
+
+legend{
+    font-size: 2rem;
+    color: #2e4b80;
+}
+label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #223d70;
+}
+/*Selecciona todos los input, a excepcion de submit*/
+input:not([type="submit"]),
+textarea, select{ 
+    padding: 1rem;
+    display:block;
+    width: 100%;
+    background-color: #faebe3;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+/*Toma unicamente el ancho que necesita*/
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
+select{
+    -webkit-appearance: none; /*prefijo, es necesario para que funcione*/
+    appearance: none;
+}
+textarea{ /*Asignamos altura*/
+    height: 20rem;
+}
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }

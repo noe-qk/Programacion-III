@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <header class = "site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                    <!--si oprimo en la imagen, me lleva a la pagina ppal-->
+                    <a href="/">
+                    <img src="img/Logo Inmobiliaria.png" alt="Logo de Inmobiliaria">
+                    </a>
+
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="propiedades.html">Propiedades</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="ingresar.html">Servicios</a>
+                </nav>
+            </div> <!-- Div que cierra barra-->
+        </div> <!-- Div que cierra contenedor-->
+    </header>
+
+<h1 class="f-300 centrar-texto"> Contacto</h1>
+<img src="" alt="Imagen principal">
+
+<main class="contenedor seccion contenido-centrado">
+    <h2 class="fw-300 centrar-texto">Formulario de contacto</h2>
+
+    <form class="contacto" action="">
+        <fieldset>
+
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu Nombre">
+
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="Ingresa tu email" required>
+            
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" placeholder="Ingresa tu nro de telefono" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Propiedad</legend>
+            <label for="opciones">Ofrecer o Alquiler</label>
+            <select id="opciones">
+                <option value=""disabled>--Selecione una opción--</option>
+                <option value="">Ofrecer una propiedad</option>
+                <option value="">Alquilar Propiedad</option>
+                
+            </select>
+            <label for="presupuesto">Presupuesto</label>
+            <input type="text" id="presupuesto" placeholder="Ingrese Presupuesto de la Propiedad">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <p>Como desea ser contactado:</p>
+            <div class="forma-contacto">
+                <label for="telefono">Telefono</label>
+                <input type="radio" name="telefono" value="telefono" id="telefono">
+
+                <label for="correo">E-mail</label>
+                <input type="radio" name="contacto" value="correo" id="correo" >
+            </div>
+
+            <p>Cuando desea ser contactado</p>
+            
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                <label for="hora">Hora</label>
+                <input type="time" name="" id="hora" min="9:00" max="20:00">
+          
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="boton boton-naranja seccion">
+
+
+    </form>
+</main>
+
+
+
+<!--Seccion del footer, navegacion igual que en el inicio-->
+    <footer class="site-footer seccion">
+        <div class=" contenedor contenderor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="propiedades.html">Propiedades</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="ingresar.html">Servicios</a>
+            </nav>
+
+            <p class="copyright"> Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
