@@ -26,15 +26,20 @@ img{
 
 h1{
 font-size: 2.8rem;
+color: #061c4e;
+
 }
 h2{
 font-size: 2.4rem;
+color: #072366;
 }
 h3{
     font-size: 2rem;
+    color: #07205a;
 }
 h4{
     font-size: 2.6rem;
+    color: #091e52;
 }
 
 /*Utilidades*/
@@ -194,6 +199,18 @@ h4{
 }
 
 /*Contacto Home - Pagina Principal*/
+
+.imagen-superior{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+   
+}
+
+
 
 
 .imagen-inferior{
@@ -398,3 +415,126 @@ textarea{ /*Asignamos altura*/
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  /* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+/*Formulario Login */
+
+.form-login{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cod-container{
+    background: #fff;
+    width: 38rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.form-header{
+    background: #facab0;
+    text-align: center;
+    padding: 3rem 0rem 4rem ;
+    
+
+}
+.form-header span{
+    color: #c99f93bd;
+}
+
+.cod-form{
+    padding: 1rem 4 rem 4rem;
+
+}
+.form-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    
+}
+h3{
+
+}
+
+h3::after,
+h3::before{
+    position absolute
+
+}
+
+
